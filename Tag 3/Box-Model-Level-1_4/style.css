@@ -1,0 +1,9 @@
+div {
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  background-color: #9bc1bc;
+  border: solid 12px #f4f1bb;
+  outline: solid 12px #546a7b;
+  box-shadow: 0 0 0 2em #f4aab9;
+}

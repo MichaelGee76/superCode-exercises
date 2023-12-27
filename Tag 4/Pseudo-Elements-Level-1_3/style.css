@@ -1,0 +1,74 @@
+/* Box Sizing - border-box /Margin/Padding = 0 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 400px;
+  margin: auto;
+  padding: 100px;
+}
+
+h1::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+h1:hover::first-letter {
+  color: aqua;
+}
+
+ul {
+  margin: 10px 0 0 35px;
+}
+
+ul li:first-of-type,
+ul li:nth-of-type(2) {
+  text-decoration: line-through;
+}
+
+ul li:nth-of-type(5),
+ul li:nth-of-type(6) {
+  text-decoration: underline;
+}
+
+ul li:first-of-type::marker,
+ul li:nth-of-type(2)::marker {
+  content: "✔ ";
+}
+
+ul li:nth-of-type(5)::marker,
+ul li:nth-of-type(6)::marker {
+  content: "❌ ";
+}
+
+ul li:nth-of-type(3)::marker,
+ul li:nth-of-type(4)::marker {
+  content: "👨‍🦯";
+}
+
+ul li:first-of-type::after {
+  content: " 🏟";
+}
+
+ul li:nth-of-type(2)::after {
+  content: " 🔢";
+}
+
+ul li:nth-of-type(3)::after {
+  content: " 🏃‍♂️";
+}
+
+ul li:nth-of-type(4)::after {
+  content: " 🥚";
+}
+
+ul li:nth-of-type(5)::after {
+  content: " 🎮";
+}
+
+ul li:nth-of-type(6)::after {
+  content: " 🛠";
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: robot;
+  src: url(./fonts/PressStart2P-Regular.ttf);
+}
+@font-face {
+  font-family: fredo;
+  src: url(./fonts/Fredoka-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: pacifico;
+  src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: press;
+  src: url(./fonts/PressStart2P-Regular.ttf);
+}
+h1 {
+  font-family: robot;
+  background-color: greenyellow;
+  text-align: center;
+}
+
+p {
+  font-family: pacifico;
+  font-weight: 700;
+}
+em {
+  text-shadow: 2px 2px 2px red;
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 100;
+  font-size: 8px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}

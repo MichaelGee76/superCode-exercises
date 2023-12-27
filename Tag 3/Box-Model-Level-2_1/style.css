@@ -1,0 +1,53 @@
+div {
+  width: 600px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  border: 3px dotted;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 1px 3px 3px grey;
+  width: 400px;
+}
+
+h3 {
+  border: double 8px lightgreen;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+}
+
+p {
+  color: purple;
+  border: rgb(224, 140, 14) solid 2px;
+  padding: 20px;
+}
+
+p::first-letter {
+  font-size: 2rem;
+}
+
+ol,
+ul {
+  border: dotted 3px green;
+  width: 400px;
+  margin: auto;
+  padding: 0 20px 0 20px;
+  text-decoration: underline green;
+  margin-bottom: 20px;
+}

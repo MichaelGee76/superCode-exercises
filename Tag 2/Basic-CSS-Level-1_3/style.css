@@ -1,0 +1,9 @@
+ul {
+    background-color: grey;
+    list-style: none;
+}
+
+span, a {
+    color: red;
+}
+

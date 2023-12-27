@@ -1,0 +1,44 @@
+div {
+  border: 3px solid #ffcc00;
+}
+
+p::before {
+  content: "Info";
+  color: #ffcc00;
+  font-size: 35px;
+}
+
+a::after {
+  content: " 💕";
+}
+
+a {
+  text-decoration: none;
+}
+
+p::selection {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+article a {
+  font-size: 3em;
+}
+
+article a:hover {
+  text-decoration: none;
+  background-color: #7e3661;
+  color: white;
+}
+
+section img:hover:first-of-type {
+  border: double 10px black;
+}
+
+section img:hover:nth-of-type(2) {
+  filter: grayscale(1);
+}
+
+section img:hover:nth-of-type(3) {
+  border-radius: 100%;
+}

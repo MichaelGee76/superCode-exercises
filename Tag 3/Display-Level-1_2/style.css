@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-image: url(https://picsum.photos/1200);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(36, 34, 34);
+}
+
+nav {
+  color: white;
+}
+ul {
+  list-style: none;
+  text-align: right;
+}
+li {
+  display: inline;
+}

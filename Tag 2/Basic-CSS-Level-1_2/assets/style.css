@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(101, 20, 20);
+}
+
+h2 {
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+span {
+    font-style: italic;
+}
+
+
+
+/* font-style: italic;
+font-size: 16px;
+text-align: center;
+font-weight: lighter;
+color: rgb(101, 20, 20);
+text-align: center;
+background-color: lightgray; */

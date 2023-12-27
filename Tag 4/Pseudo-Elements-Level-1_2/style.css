@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Monserat;
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+/* Box Sizing - border-box /Margin/Padding = 0 */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: Monserat;
+  font-weight: 800;
+}
+h3::first-letter,
+li::first-letter {
+  font-size: 40px;
+  color: rgb(7, 78, 37);
+}
+
+h3:hover::first-letter {
+  color: red;
+}
+
+ul li:first-of-type:first-letter {
+  color: rgb(105, 233, 233);
+  text-decoration: overline;
+}
+
+ul li:nth-of-type(2):first-letter {
+  color: rgb(206, 45, 184);
+  text-decoration: underline;
+}
+
+ul li:last-of-type::first-letter {
+  color: greenyellow;
+  text-decoration: line-through;
+}
+
+section p:first-of-type {
+  text-indent: 40px;
+  color: rgb(105, 102, 102);
+}
+
+section p:first-of-type:first-line {
+  font-size: 25px;
+}
+
+section p:first-of-type {
+  color: rgb(43, 41, 41);
+}
+
+.redder::first-letter {
+  color: red;
+  font-size: 40px;
+}
+
+.redder::first-line {
+  color: green;
+}
+
+.redder:hover::first-line {
+  color: aqua;
+}
+
+.second {
+  font-size: 10px;
+}
