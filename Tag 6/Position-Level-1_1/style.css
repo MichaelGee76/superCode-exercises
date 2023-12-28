@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Black.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+}
+
+div {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  color: red;
+}
+
+div p:first-of-type {
+  font-size: 5rem;
+}
+div p:last-of-type {
+  font-size: 2rem;
+  text-align: right;
+}

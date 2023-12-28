@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+.container :first-child {
+  width: 40rem;
+}
+
+.container :nth-child(2) {
+  width: 20em;
+}
+
+.container :nth-child(3) {
+  width: 400px;
+}
+
+.container :nth-child(4) {
+  width: 35vw;
+}
+
+.container :nth-child(5) {
+  width: 75vh;
+}
+
+.container :nth-child(6) {
+  width: 50%;
+}

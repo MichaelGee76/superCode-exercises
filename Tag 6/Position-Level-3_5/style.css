@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.outerBox {
+    width: 100%;
+    height: 700px;
+    background-image: url(./assets/images/bike.png);
+    background-size: cover;
+    position: relative;
+}
+
+.innerBox {
+    padding: 100px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.innerBox h2 {
+    margin-bottom: 20px;
+}
+
+.navBox li {
+    display: inline;
+}
+
+.navBox {
+    display: block;
+    background-color: rgb(58, 51, 51);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 650px;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.navBox nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 150px;
+}
+
+main h2 {
+    text-align: center;
+    margin: 100px;
+}
+
+.pixBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.img1:hover {
+    transform: scale(1.5);
+}
+
+.img2:hover {
+    border: double 10px violet;
+}
+
+.img3:hover {
+    filter: grayscale(1);
+    border: 3px solid black;
+}
+
+.img4:hover {
+    border-radius: 50%;
+}
+.img5:hover {
+    transform: rotate(0.5turn);
+}
+.img6:hover {
+    transform: scale(0.5) translate(-100%, -100%);
+}
+.tourDates p {
+    margin-left: 250px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.redSpan {
+    color: rgb(194, 58, 58);
+    text-transform: uppercase;
+}
+
+.greenSpan {
+    color: rgb(63, 160, 63);
+    text-transform: uppercase;
+}

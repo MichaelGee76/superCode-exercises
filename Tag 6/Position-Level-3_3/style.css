@@ -1,0 +1,94 @@
+/* farben: #7b8ce4, #ebeaec, #ffeccc, #3f414e; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: #7b8ce4;
+  height: 100vh;
+  position: relative;
+}
+
+.leftCorner {
+  color: white;
+  display: inline;
+}
+
+.rightCorner {
+  position: absolute;
+  top: 0;
+  left: 87%;
+}
+
+.rightCorner ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.rightCorner nav ul li {
+  display: inline;
+}
+.mainContainer {
+  position: relative;
+}
+
+.right {
+  position: absolute;
+  top: 20vh;
+  left: 60vw;
+  width: 300px;
+  height: 300px;
+  background-image: url(./images/circle.png);
+  background-size: cover;
+}
+
+.innerContainer {
+  position: relative;
+}
+
+.one {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+}
+
+.two {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.three {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.left {
+  position: absolute;
+  top: 25vh;
+  left: 15vw;
+  text-align: center;
+}
+
+.left h2:last-of-type,
+.left p {
+  margin-bottom: 20px;
+}
+
+.left p,
+.left h2 {
+  color: white;
+}
+
+.left a {
+  background-color: white;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
