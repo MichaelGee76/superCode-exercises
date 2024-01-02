@@ -1,0 +1,110 @@
+@font-face {
+    font-family: RW;
+    src: url(./assets/fonts/static/Raleway-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: RW;
+}
+/* Header */
+header {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 200px;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+header div {
+    display: flex;
+    margin-right: 175px;
+    gap: 30px;
+}
+
+header div a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+header h1:hover,
+header a:hover {
+    opacity: 1;
+}
+
+/* Main */
+
+section {
+    height: 85vh;
+    background-image: url(./assets/images/ocean.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+article p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+article div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+article div a {
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+article div a:nth-of-type(1) {
+    border: white solid 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+article div a:nth-of-type(1):hover {
+    color: black;
+    background-color: white;
+}
+
+article div a:nth-of-type(2) {
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: 500;
+    background-color: #745cf9;
+    border: solid 2px #745cf9;
+    opacity: 0.75;
+}
+
+article div a:nth-child(2):hover {
+    opacity: 1;
+}
