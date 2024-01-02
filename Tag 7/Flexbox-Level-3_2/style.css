@@ -18,8 +18,14 @@ header {
 }
 
 header h1::before {
-    margin-left: 100px;
+    padding-left: 50px;
+    /* margin-left: 100px; */
+
     content: url(./assets/images/logo.png);
+}
+
+header h1 {
+    margin-left: 10px;
 }
 header nav {
     display: flex;
@@ -37,7 +43,7 @@ header nav a {
     color: black;
 }
 
-section {
+/* section {
     background-color: #d9e8e5;
     height: 92vh;
 }
@@ -54,4 +60,70 @@ section div article {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+} */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+    width: 340px;
+    height: 230px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+main {
+    background-color: #d9e8e5;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main h2 {
+    margin-left: 50px;
+}
+
+.gallery {
+    margin-left: 100px;
+}
+
+.gallery div p {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+/* BG Images */
+.item1 {
+    background-image: url(./assets/images/ring1.png);
+}
+
+.item2 {
+    background-image: url(./assets/images/ring2.png);
+}
+
+.item3 {
+    background-image: url(./assets/images/ring3.png);
+}
+
+.item4 {
+    background-image: url(./assets/images/ring4.png);
+}
+
+.item5 {
+    background-image: url(./assets/images/ring5.png);
+}
+
+.item6 {
+    background-image: url(./assets/images/ring6.png);
 }
