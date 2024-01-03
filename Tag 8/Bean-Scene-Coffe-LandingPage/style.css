@@ -1,0 +1,263 @@
+@font-face {
+    font-family: Clicker;
+    src: url(./assets/fonts/ClickerScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlayFair;
+    src: url(./assets/fonts/static/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+header {
+    background-image: url(./assets/images/hero.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Clicker;
+    font-size: 35px;
+    margin-left: 90px;
+    color: white;
+    text-decoration: none;
+}
+
+.leftNav a,
+.rightNav a {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    font-family: PlayFair;
+    color: black;
+    text-decoration: none;
+    border-radius: 24px;
+    background: #f9c06a;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+/* .button:hover {
+    transform: scale(1.5);
+} */
+.heroContainer {
+    color: white;
+    width: 40vw;
+    margin-left: 90px;
+    margin-top: 90px;
+}
+
+.heroContainer p:first-of-type {
+    font-family: PlayFair;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: Clicker;
+    font-size: 220px;
+    font-weight: 400;
+}
+
+.heroContainer p:last-of-type {
+    font-family: PlayFair;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+.coffeeBlast img {
+    transform: rotateX(180deg);
+    width: 360px;
+}
+
+/* Main */
+
+main section {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.leftContainer,
+.rightContainer {
+    width: 40vw;
+    margin-top: 50px;
+}
+
+.leftContainer h2 {
+    font-family: PlayFair;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 50px;
+    color: #603809;
+    margin-bottom: 30px;
+    line-height: 29px;
+}
+
+.leftContainer p {
+    font-family: PlayFair;
+    font-size: 20px;
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+.rightContainer {
+    background-image: url(./assets/images/styled-cup.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coffeeBlast {
+    margin-top: 50px;
+    margin-top: 50px;
+}
+
+.difference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.difference h2 {
+    color: #603809;
+    font-family: PlayFair;
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: -50px;
+}
+
+.difference p {
+    font-family: PlayFair;
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+
+/* Section Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.cards div {
+    width: 230px;
+    height: 230p;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff9f1;
+    border: 1px solid #ffeed8;
+}
+.cards div:first-of-type {
+    background-color: #ffeed8;
+}
+
+.cards div img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.cards h3,
+.startToday h3 {
+    font-family: PlayFair;
+    font-size: 20px;
+    font-weight: 700;
+    color: #603809;
+    margin-bottom: 10px;
+}
+
+.cards p {
+    font-family: PlayFair;
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+/* Sectio Start today */
+
+.startToday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startToday p {
+    font-family: PlayFair;
+    font-size: 16px;
+    color: #707070;
+}
+
+.startToday a {
+    margin-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(139, 80, 13, 1);
+
+    background-blend-mode: overlay;
+    background-image: url(./assets/images/footer-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+}
+
+.footerLeft,
+.footerRight {
+    width: 40vw;
+}
+.footerLeft {
+    margin-left: 90px;
+}
+
+.footerLeft p:first-of-type {
+    font-family: PlayFair;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footerLeft p:last-of-type {
+    font-family: PlayFair;
+    font-size: 16px;
+    line-height: 29px;
+    color: white;
+    margin-bottom: 30px;
+}
+.footerRight img {
+    width: 300px;
+}
