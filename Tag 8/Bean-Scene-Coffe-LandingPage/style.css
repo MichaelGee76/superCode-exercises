@@ -26,6 +26,7 @@ header {
     background-repeat: no-repeat;
     height: 85vh;
     padding-top: 20px;
+    /* background: url(./assets/images/overlay.png); */
 }
 
 nav {
@@ -61,9 +62,9 @@ nav {
     font-weight: 800;
 }
 
-/* .button:hover {
-    transform: scale(1.5);
-} */
+.button:hover {
+    transform: scale(1.1);
+}
 .heroContainer {
     color: white;
     width: 40vw;

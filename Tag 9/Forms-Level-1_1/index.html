@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulare</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name<span> *</span></label>
+            <input
+                type="text"
+                id="vorname"
+                placeholder="Vorname"
+                size="21"
+                required
+            />
+            <input
+                type="text"
+                id="nachname"
+                placeholder="Nachname"
+                size="21"
+                required
+            />
+            <label for="email">Email <span>*</span></label>
+            <input type="email" name="" id="email" size="50" required />
+            <label for="thema">Thema</label>
+            <select name="" id="thema">
+                <option value="general">General</option>
+                <option value="advertise">Advertise</option>
+                <option value="partnership">Partnership</option>
+            </select>
+            <label for="nachricht">Nachricht <span>*</span></label>
+            <textarea name="" id="nachricht" cols="50" rows="10"></textarea>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
