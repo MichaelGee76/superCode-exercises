@@ -1,0 +1,12 @@
+div {
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    transition: all 1s ease-in-out;
+}
+
+div:hover {
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+}

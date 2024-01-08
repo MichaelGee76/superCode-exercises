@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation: moveBall 3s ease-in-out infinite;
+}
+
+.ball:hover {
+    animation-play-state: paused;
+}
+
+@keyframes moveBall {
+    0%,
+    100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateX(300px);
+        background-color: brown;
+    }
+    50% {
+        transform: translate(300px, 300px);
+        background-color: aqua;
+    }
+    75% {
+        transform: translateY(300px);
+        background-color: blueviolet;
+    }
+}

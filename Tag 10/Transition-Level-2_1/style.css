@@ -1,0 +1,24 @@
+section {
+    background-color: lightgray;
+}
+
+div {
+    background-color: lightcoral;
+    height: 75px;
+    width: 75px;
+    transition: all 3s ease-in-out;
+    transition-timing-function: linear;
+}
+.top {
+    margin-bottom: 10px;
+}
+
+.bottom {
+    background-color: lightgreen;
+    transition-delay: 1s;
+    transition: all 3s ease-in-out;
+}
+
+section:hover div {
+    transform: translate(90vw);
+}
