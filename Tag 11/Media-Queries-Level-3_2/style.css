@@ -1,0 +1,371 @@
+/* Box Sizing - border-box /Margin/Padding = 0  / General Styling*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Nunito;
+    src: url(./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RockSalt;
+    src: url(./assets/fonts/Rock_Salt/RockSalt-Regular.ttf);
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 67.5%;
+    font-family: Nunito;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+
+h1 {
+    font-family: RockSalt !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroLeft {
+    background: #df8480;
+    position: relative;
+}
+
+.heroLeft p {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: white;
+    width: 12rem;
+    text-align: right;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.heroRight p {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #df8480;
+    width: 12rem;
+    text-align: right;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+}
+
+.headingHidden {
+    display: none;
+}
+
+.heroRight img {
+    height: 100%;
+}
+
+/* Main Steps */
+
+.works h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: #df8480;
+    padding: 1.5rem 0;
+}
+
+.steps,
+.menus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    padding: 0 6.25rem;
+    margin-bottom: 2vw;
+}
+
+.step {
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vw;
+}
+.step h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #df8480;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.step p {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1vw 0;
+}
+
+/* WhatMenu */
+.whatMenu {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+}
+
+.whatMenu h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #df8480;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.dogSmall {
+    display: none;
+}
+
+.menuItem:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuItem p {
+    background-color: #df8480;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1.9rem;
+}
+
+.menuItem:nth-of-type(3) {
+    background-color: #df8480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Section SignUp */
+
+.signUpContainer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.signUp p {
+    padding: 1vw;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-bottom: 2vw;
+}
+
+form input {
+    border-radius: 4.6rem;
+    height: 3.375rem;
+    text-align: center;
+}
+
+#submit {
+    background-color: #df8480;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+.footer img {
+    display: inline-block;
+    width: 1.625rem;
+    height: 1.6rem;
+}
+
+footer div:first-of-type {
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+footer div:last-of-type {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    padding-right: 1vw;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .heroRight {
+        margin: auto;
+
+        position: relative;
+    }
+    .heroRight p {
+        display: block;
+        top: 50px;
+    }
+    .heroRight img {
+        src: url(./assets/images/doglarge.png);
+        width: 100vw;
+        background-position: top;
+    }
+    .headingHidden {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 30vw;
+    }
+
+    .heroLeft {
+        display: none;
+    }
+
+    .works h2 {
+        color: white;
+        background-color: #df8480;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    .step {
+        box-shadow: none;
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        padding-top: 1vw;
+    }
+    .whatMenu h2 {
+        color: white;
+        background-color: #df8480;
+        width: 100%;
+        font-size: 1rem;
+        padding: 1.5rem 0.625rem;
+    }
+
+    .menus {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+    .menuItem:nth-of-type(3) {
+        grid-column: 1/-1;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menuItem:nth-of-type(1) {
+        object-fit: fill;
+    }
+
+    .menuItem p {
+        background-color: white;
+        color: black;
+    }
+
+    .menuItem h2 {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .steps {
+        grid-template-columns: 1fr;
+        padding: 1vw 1vw;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .step p,
+    .step h3 {
+        width: 90vw;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+    }
+    .menus img {
+        width: 100%;
+    }
+
+    .dogBig {
+        display: none;
+    }
+    .dogSmall {
+        display: block;
+    }
+    .signUp {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .signUp p {
+        margin-bottom: 4vw;
+        padding-top: 4vw;
+    }
+
+    form {
+        width: 90vw;
+        gap: 4vw;
+        margin-bottom: 5vw;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 10vw;
+    }
+
+    footer div:first-of-type {
+    }
+
+    footer div:first-of-type img {
+        margin-right: 15vw;
+    }
+}
