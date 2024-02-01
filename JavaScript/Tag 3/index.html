@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="MichaelGee" content="Template" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section>
+                <h2>Berechne das Geburtsjahr</h2>
+                <form onsubmit="calcAge(event)">
+                    <label for="yob">Gib dein Geburtsjahr ein</label>
+                    <input type="number" id="yob" placeholder="z.B. 1999" />
+                    <input type="submit" onclick="calcAge(event)" />
+                </form>
+                <h3>Du bist: <span class="yourAge"> ?</span> Jahre alt!</h3>
+            </section>
+            <section>
+                <h2>Berechner den Unterschied</h2>
+                <form onsubmit="calcDifference(event)">
+                    <label for="alter1">Alter1</label>
+                    <input type="text" id="alter1" />
+                    <label for="alter2">Alter2</label>
+                    <input type="text" id="alter2" />
+                    <input
+                        type="submit"
+                        value="Berechne"
+                        onclick="calcDifference(event)"
+                    />
+                </form>
+                <h3>Der Unterschied ist <span class="diff">?</span></h3>
+            </section>
+        </main>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

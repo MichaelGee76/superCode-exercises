@@ -7,16 +7,16 @@
 // wink.innerHTML = "<p>start of the element</p>";
 // document.write("end of the element");
 // #####################################################
-const galery = document.getElementById("gallery");
-galery.innerHTML = "<figure></figure>";
+// const galery = document.getElementById("gallery");
+// galery.innerHTML = "<figure></figure>";
 // galery.innerHTML += "<figure class='one'></figure>";
 // galery.innerHTML += "<figure class='two'></figure>";
 
-const figure = document.querySelector("figure");
-figure.style.display = "block";
-figure.innerHTML = "<img src='https://picsum.photos/200'>Fig1</img>";
-figure.innerHTML += "<img src='https://picsum.photos/200'>Fig2</img>";
-figure.innerHTML += "<img src='https://picsum.photos/200'>Fig3</img>";
+// const figure = document.querySelector("figure");
+
+// figure.innerHTML = "<img src='https://picsum.photos/200'>Fig1</img>";
+// figure.innerHTML += "<img src='https://picsum.photos/200'>Fig2</img>";
+// figure.innerHTML += "<img src='https://picsum.photos/200'>Fig3</img>";
 // const figure1 = document.querySelector(".one");
 // figure1.innerHTML = "<img src='https://picsum.photos/201'></img>";
 

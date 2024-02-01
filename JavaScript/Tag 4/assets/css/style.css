@@ -1,0 +1,15 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vw;
+    background-color: beige;
+}
