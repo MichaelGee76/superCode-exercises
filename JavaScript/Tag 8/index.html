@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="MichaelGee" content="Template" />
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Mehrwertsteuer Rechner</h1>
+
+            <form action="" onsubmit="return false">
+                <label for="">Was soll berechnet werden</label>
+                <div class="was">
+                    <div>
+                        <input
+                            type="radio"
+                            name="mwst-btn"
+                            id="net-zu-brut"
+                            value="netto2brutto"
+                            checked
+                        />
+                        <label for="" id="net-zu-brut" value="brutto-netto"
+                            >Netto zu Brutto</label
+                        >
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="mwst-btn"
+                            id="brut-zu-net"
+                            value="brutto2netto"
+                        />
+                        <label for="" id="brutto2netto">Brutto zu Netto </label>
+                    </div>
+                </div>
+                <div class="satz">
+                    <label for="">Mehrwertsteuersatz</label>
+                    <div>
+                        <input
+                            type="radio"
+                            name="mwst"
+                            checked
+                            id="percent19"
+                            value="19"
+                            checked
+                        />
+                        <label for="" id="percent19">19%</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="percent7"
+                            name="mwst"
+                            value="7"
+                        />
+                        <label for="" id="percent7">7%</label>
+                    </div>
+                </div>
+                <div class="betrag">
+                    <label for="" id="outputText"
+                        >Betrag in Euro <span>*</span></label
+                    >
+                    <input
+                        type="text"
+                        id="amount"
+                        onfocus="this.value=''"
+                        required
+                    />
+                </div>
+                <input type="submit" value="Berechnen" onclick="mwstCalc()" />
+            </form>
+            <h3>Ergebnis</h3>
+            <div class="mwst-betrag">
+                <h4>Mehrwertsteuerbetrag</h4>
+                <p>€</p>
+            </div>
+            <div class="endbetrag">
+                <h4 class="endbetragBruttoNetto">Endbetrag</h4>
+                <p>€</p>
+            </div>
+        </div>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

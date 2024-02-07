@@ -84,33 +84,35 @@
 
 // ###########################################################################
 
-// function showTxt() {
-//     const selection = document.querySelector("#myform select").value;
-//     // console.log(selection);
-//     const table = document.querySelector(".boxMasse tr td ");
-//     console.log(table);
-//     const masse = document.querySelector("#masse");
-//     switch (selection) {
-//         case "0":
-//             table.innerHTML = "Brief und Postkarte Schmeiss weg den Scheiss!";
-//             //  masse.innerHTML =
-//             //       "L: 10 - 23,5 cm <br> B:  7 - 12,5 cm <br> H: bis 1 cm";
-//             break;
-//         case "1":
-//             table.innerHTML = "DHL Paket 2 kg - brauch mer net";
-//             break;
-//         case "2":
-//             table.innerHTML = "DHL Paket 5 kg - brauch mer au net!";
-//             break;
-//         case "3":
-//             table.innerHTML =
-//                 "Wir versenden keine Kühlschränke; Mikrowellen oder Kleinmöbel. Sag mal, Geht`s noch???";
-//             break;
+function showTxt() {
+    // console.log("fish");
 
-//         default:
-//             table.innerHTML = "Default Mefault ";
-//     }
-// }
+    const selection = document.querySelector("#myform select").value;
+    // console.log(selection);
+    const table = document.querySelector(".boxMasse tr td ");
+    // console.log(table);
+    const masse = document.querySelector("#masse");
+    switch (selection) {
+        case "0":
+            table.innerHTML = "Brief und Postkarte Schmeiss weg den Scheiss!";
+            break;
+        case "1":
+            table.innerHTML = "DHL Paket 2 kg - brauch mer net";
+            break;
+        case "2":
+            // Mit den backticks können mehrzeilige strings erstellt werden!
+            table.innerHTML = `<b>DHL Paket 5 kg</b> <br>
+      bis 120 x 60 x 60 cm`;
+            break;
+        case "3":
+            table.innerHTML =
+                "Wir versenden keine Kühlschränke; Mikrowellen oder Kleinmöbel. Sag mal, Geht`s noch???";
+            break;
+
+        default:
+            table.innerHTML = "Default Mefault ";
+    }
+}
 
 // ################## ternary #############################
 
@@ -134,17 +136,17 @@
 //             : (output.textContent = "Not Save, go home loooser!");
 // }
 
-function send() {
-    console.log("fish");
-    const errorMsg = "Wer nix zu sagen hat sollte die Fresse halten!";
-    const toSend = document.querySelector("input:first-of-type").value;
-    const error = document.querySelector("h3");
-    const lastMessage = document.querySelector("#laMess");
-    const msg =
-        // length muss größer Null sein NICHT größer gleich NULLLLLLLLLL
-        // so nicht: teSend.length >= 0 <<<<<-------NEINEINEINEINEINEINEINEINNH
-        toSend.length > 0
-            ? ((lastMessage.textContent = toSend), (error.textContent = " "))
-            : (error.textContent = errorMsg);
-    console.log(msg);
-}
+// function send() {
+//     console.log("fish");
+//     const errorMsg = "Wer nix zu sagen hat sollte die Fresse halten!";
+//     const toSend = document.querySelector("input:first-of-type").value;
+//     const error = document.querySelector("h3");
+//     const lastMessage = document.querySelector("#laMess");
+//     const msg =
+//         // length muss größer Null sein NICHT größer gleich NULLLLLLLLLL
+//         // so nicht: teSend.length >= 0 <<<<<-------NEINEINEINEINEINEINEINEINNH
+//         toSend.length > 0
+//             ? ((lastMessage.textContent = toSend), (error.textContent = " "))
+//             : (error.textContent = errorMsg);
+//     console.log(msg);
+// }
