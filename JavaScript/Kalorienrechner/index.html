@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="MichaelGee" content="Template" />
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <form action="" onsubmit="return false">
+            <h1>Kalorienrechner</h1>
+            <label for="groesse">Größe</label>
+            <input type="text" name="groesse" placeholder="180" id="groesse" onfocus="this.value=''" />
+            <label for="alter">Alter</label>
+            <input type="text" name="alter" placeholder="31" onfocus="this.value=''" />
+            <label for="gewicht">Gewicht</label>
+            <input type="text" name="gewicht" placeholder="80" onfocus="this.value=''" />
+            <div>
+                <input type="radio" checked name="gender" value="female" />
+                <label for="gender">Weiblich</label>
+                <input type="radio" name="gender" value="male" />
+                <label for="gender">Männlich</label>
+            </div>
+            <select name="taetigkeiten" id="">
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig körperlicher Aktivität</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender o. stehender Tätigkeit</option>
+                <option value="1.9">Überwiegend gehend oder stehend</option>
+                <option value="2.2">Körperlich anstrengende berufliche Tätigkeit</option>
+                <option value="0.95">Nur Schlafen, den ganzen Tag</option>
+                <option value="1.2">Nur sitzen/liegen, den ganzen Tag</option>
+            </select>
+            <input type="submit" name="send" id="send" value="Senden" onclick="calorieCalc()" />
+            <div class="output">
+                <div class="heading">
+                    <h4><span>hidden</span></h4>
+                    <h4>kcal</h4>
+                    <h4>kJ</h4>
+                </div>
+                <div class="umsatz">
+                    <h4>Grundumsatz</h4>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="gesamt">
+                    <h4>Gesamtumsatz</h4>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </form>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
