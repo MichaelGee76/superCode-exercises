@@ -17,8 +17,8 @@ function calorieCalc() {
     const cal2Joule = 4.1868;
     // If Statement checkt ob Input Felder Number ist, fals nicht- Alert!
     if (isNaN(height) === true || isNaN(age) === true || isNaN(weight) === true) {
-        alert("Not a number, idiot!");
-        return;
+        alert("Not a number, idiot! I guess you need a refresh of 'how to fill a form'.");
+        window.open(link, "_blank") || window.location.replace(link);
     }
     // If Statement berechnet Umsatz Kalorien/Joule
     if (gender === "female") {

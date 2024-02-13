@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Courier New", Courier, monospace;
 }
 
 html {
@@ -35,6 +36,17 @@ select {
     border: solid 1.25px purple;
     border-radius: 5px;
     margin-bottom: 1rem;
+    color: purple;
+}
+
+select {
+    font-size: 0.75rem;
+}
+
+::placeholder {
+    color: purple;
+    padding-left: 0.5rem;
+    opacity: 0.5;
 }
 
 #send {
@@ -44,7 +56,7 @@ select {
 }
 
 .heading {
-    background-color: rgba(128, 0, 128, 0.712);
+    background-color: rgba(128, 0, 128, 0.85);
     color: white;
     padding: 0.5rem;
 }
@@ -59,18 +71,18 @@ span {
 }
 
 .umsatz {
-    background-color: rgba(128, 0, 128, 0.748);
+    background-color: rgba(128, 0, 128, 0.49);
     color: white;
     padding: 0.5rem;
 }
 
 .output {
-    border: 1.25px solid rgba(128, 0, 128, 0.485);
+    border: 1.25px solid rgba(128, 0, 128, 0.45);
     border-radius: 5px;
 }
 
 .gesamt {
-    background-color: rgba(128, 0, 128, 0.375);
+    background-color: rgba(128, 0, 128, 0.75);
     color: white;
     padding: 0.5rem;
 }
@@ -84,4 +96,8 @@ span {
 .gesamt {
     display: flex;
     justify-content: space-between;
+}
+
+input[type="radio"] {
+    accent-color: purple;
 }
