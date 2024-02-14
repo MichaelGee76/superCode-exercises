@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.card-color {
+    background-color: blue;
+}
+
+/* ########################### */
+
+p {
+    margin: 0.5em 0;
+}
+
+#umschalter {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#umschalter li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    border-radius: 18px;
+    border: 3px solid black;
+}
+
+#gray {
+    background: gray;
+}
+
+#white {
+    background: white;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
+
+.grayBg {
+    background-color: gray;
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.blueBg {
+    background-color: blue;
+}
+
+.yellowBg {
+    background-color: yellow;
+}
