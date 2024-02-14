@@ -2,10 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    margin-bottom: 1rem;
 }
 
 html {
     font-size: 62.5%;
+    padding: 3rem;
 }
 
 img {
