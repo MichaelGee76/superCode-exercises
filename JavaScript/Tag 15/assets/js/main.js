@@ -154,17 +154,6 @@ function tableMaker(elements) {
 
 output.innerHTML = tableMaker(singers);
 
-// const searchBtn = document.querySelector(".search");
-
-// searchBtn.addEventListener("click", () => {
-//   // Holt sich das Value
-//   const inputVal = document.querySelector(".input").value;
-
-//   // Filterfunktion ohne groß und klein schriebung. Alles wird in klein verglichen
-//   const searchedMovies = movies.filter((item) => {
-//     return item[0].toLowerCase().includes(inputVal.toLowerCase());
-//   });
-
 document.querySelector("button").addEventListener("click", () => {
     const input = document.querySelector("#search").value.toLowerCase();
     const result = singers.filter((band) => {
