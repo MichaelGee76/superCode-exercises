@@ -21,3 +21,41 @@ a {
     flex-direction: column;
     gap: 20px;
 }
+
+.table-style {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+th,
+td {
+    padding: 5px 20px;
+}
+
+tr {
+    text-align: right;
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(144, 238, 144, 0.363);
+}
+
+tr:nth-child(odd) {
+    background-color: Lightgreen;
+}
+
+::placeholder {
+    color: rgb(144, 238, 144);
+}
+
+button {
+    background-color: lightgreen;
+    color: white;
+    padding: 0 10px;
+}
+
+input {
+    color: rgb(9, 88, 9);
+    font-weight: 700;
+}

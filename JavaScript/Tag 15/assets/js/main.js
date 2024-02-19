@@ -127,7 +127,7 @@ function tableMaker(elements) {
     let tableHead = `
     
   <div class="table">
-  <table>
+  <table class="table-style">
     <tr>
       <th>Name</th>
       <th>Country</th>

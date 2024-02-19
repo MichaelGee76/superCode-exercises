@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    padding: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
