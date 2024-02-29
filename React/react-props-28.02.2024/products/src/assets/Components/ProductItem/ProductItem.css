@@ -1,0 +1,14 @@
+.tile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.tile img {
+    width: 100px;
+    margin: auto;
+}
