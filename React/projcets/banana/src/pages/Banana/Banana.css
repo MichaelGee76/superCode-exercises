@@ -1,0 +1,44 @@
+.container {
+    width: 200px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input {
+    all: unset;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.upperContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+}
+
+h1 {
+    color: #f9d438;
+    font-size: 2rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+button {
+    all: unset;
+    background-color: #edcc3e;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
